@@ -1,0 +1,47 @@
+body {
+    background-color: skyblue;
+}
+
+h1 {
+    font-size: 300%;
+}
+
+#rainbow {
+  height: 100px;
+  background-color: red;
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+
+h2 {
+    color: gold;
+    font-size: 200%;
+}
+
+p {
+    color: black;
+    font-size: 150%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.shadows {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
