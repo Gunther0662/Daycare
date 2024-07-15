@@ -1,0 +1,63 @@
+:root{
+    --bg:#3f87a6;
+    --card:#6a6475;
+    --hover:#5c4764;
+    --grey:grey;
+    --white: white;
+}
+body{
+    background: linear-gradient(0.25turn, var(--grey), var(--bg), var(--hover)); 
+    color:var(--white);
+
+ .box {
+    --bulma-box-background-color: var(--card);
+}
+
+.card {
+        
+        --bulma-card-background-color:var(--card) ;
+    }
+.navbar.is-dark {
+    background: linear-gradient(0.25turn, var(--bg), var(--hover),var(--grey));
+    border-bottom: 5px double var(--card);
+    border-top: 5px double var(--grey);
+
+    }
+.hero .image img {
+    display: block; /* Ensures the image behaves like a block element */
+    margin: auto; /* Centers the image horizontally */
+    max-width: 100%; /* Ensures the image does not exceed its container's width */
+    max-height: 100%; /* Ensures the image does not exceed its container's height */
+    width: auto; /* Ensures the image width adjusts proportionally */
+    height: auto; /* Ensures the image height adjusts proportionally */
+    object-fit: cover; /* Ensures the image fits inside its container without stretching */
+    padding-top: 10px;
+   
+}
+.card-image:first-child img {
+    display: block; /* Ensures the image behaves like a block element */
+    margin: auto; /* Centers the image horizontally */
+    padding-top:10px;/* add a space on top of the content */
+    max-width: 100%; /* Ensures the image does not exceed its container's width */
+    max-height: 100%; /* Ensures the image does not exceed its container's height */
+    width: auto; /* Allows the image width to adjust proportionally */
+    height: auto; /* Allows the image height to adjust proportionally */
+    object-fit: contain; /* Ensures the image covers the entire area of its container */
+}
+figure.imgge { 
+    border-bottom: 5px double var(--card);};
+   
+footer.footer{
+    background: linear-gradient(0.25turn, var(--bg), var(--hover),var(--grey));
+    border-bottom: 5px double var(--card);
+    border-top: 5px double var(--grey);
+
+}
+textarea.textarea{
+    background: linear-gradient(var(--hover),var(--grey));
+    color:var(--white);
+}
+input.input{
+    background: linear-gradient( var(--hover),var(--grey));
+    color:var(--white);
+}
