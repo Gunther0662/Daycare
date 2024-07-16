@@ -19,7 +19,7 @@ body{
         
         --bulma-card-background-color:var(--card) ;
     }
-.navbar.is-dark {
+.navbar-brand {
     background: linear-gradient(0.25turn, var(--bg), var(--hover),var(--grey));
     border-bottom: 5px double var(--card);
     border-top: 5px double var(--grey);
