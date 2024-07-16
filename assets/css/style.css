@@ -44,14 +44,14 @@ body{
     height: auto; /* Allows the image height to adjust proportionally */
     object-fit: contain; /* Ensures the image covers the entire area of its container */
 }
-figure.imgge { 
-    border-bottom: 5px double var(--card);};
+figure.image { 
+    border-bottom: 5px double var(--card);
+}
    
-footer{
+footer.footer {
     background: linear-gradient(0.25turn, var(--bg), var(--hover),var(--grey));
     border-bottom: 5px double var(--card);
     border-top: 5px double var(--grey);
-
 }
 textarea.textarea{
     background: linear-gradient(var(--hover),var(--grey));
