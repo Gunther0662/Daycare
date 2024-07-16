@@ -64,9 +64,3 @@ function changeImage() {
 // Executes the changeImage function every 1000 milliseconds (1 second) using setInterval,
 // which creates a carousel effect by continuously updating the displayed image.
 setInterval(changeImage, 3000);
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 80f5da079070fcfee45e814393c43b1a9f15f7c6
