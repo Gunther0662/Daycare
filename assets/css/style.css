@@ -8,8 +8,9 @@
 body{
     background: linear-gradient(0.25turn, var(--grey), var(--bg), var(--hover)); 
     color:var(--white);
+}
 
- .box {
+.box {
     --bulma-box-background-color: var(--card);
 }
 
