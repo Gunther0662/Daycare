@@ -8,8 +8,9 @@
 body{
     background: linear-gradient(0.25turn, var(--grey), var(--bg), var(--hover)); 
     color:var(--white);
+    font-family: Shadows into light;
+    font-size:  30px;
 }
-
 .box {
     --bulma-box-background-color: var(--card);
 }
@@ -18,7 +19,7 @@ body{
         
         --bulma-card-background-color:var(--card) ;
     }
-.navbar.is-dark {
+.navbar-brand {
     background: linear-gradient(0.25turn, var(--bg), var(--hover),var(--grey));
     border-bottom: 5px double var(--card);
     border-top: 5px double var(--grey);
@@ -46,13 +47,12 @@ body{
     object-fit: contain; /* Ensures the image covers the entire area of its container */
 }
 figure.imgge { 
-    border-bottom: 5px double var(--card);};
-   
+    border-bottom: 5px double var(--card);
+}   
 footer.footer{
     background: linear-gradient(0.25turn, var(--bg), var(--hover),var(--grey));
     border-bottom: 5px double var(--card);
     border-top: 5px double var(--grey);
-
 }
 textarea.textarea{
     background: linear-gradient(var(--hover),var(--grey));
@@ -61,4 +61,9 @@ textarea.textarea{
 input.input{
     background: linear-gradient( var(--hover),var(--grey));
     color:var(--white);
+}
+.shadows-into-light-regular {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
