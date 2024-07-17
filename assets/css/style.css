@@ -17,8 +17,12 @@ body{
 
 .card {
         
-        --bulma-card-background-color:var(--card) ;
+        --bulma-card-background-color:var(--card);
     }
+
+.card-content {
+    color: white;
+}
 .navbar-brand {
     background: linear-gradient(0.25turn, var(--bg), var(--hover),var(--grey));
     border-bottom: 5px double var(--card);
