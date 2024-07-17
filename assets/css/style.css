@@ -11,7 +11,7 @@ body{
     font-family: Shadows into light;
     font-size:  30px;
 }
- .box {
+.box {
     --bulma-box-background-color: var(--card);
 }
 
