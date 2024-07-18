@@ -62,6 +62,16 @@ html body{
     height: auto; /* Allows the image height to adjust proportionally */
     object-fit: contain; /* Ensures the image covers the entire area of its container */
 }
+
+.subtitle-address {
+    color: white;
+}
+
+
+#weather-info {
+    color: white;
+}
+
 figure.imgge { 
     border-bottom: 5px double var(--card);
 }   
