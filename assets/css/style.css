@@ -11,19 +11,25 @@ body{
     font-family: Shadows into light;
     font-size:  30px;
 }
- .box {
+.box {
     --bulma-box-background-color: var(--card);
 }
 
 .card {
         
-        --bulma-card-background-color:var(--card) ;
+        --bulma-card-background-color:var(--card);
     }
+
+.card-content {
+    color: white;
+}
 .navbar-brand {
+
     background: linear-gradient(0.25turn, var(--bg), var(--hover),var(--grey));
     border-bottom: 5px double var(--card);
     border-top: 5px double var(--grey);
-    }
+}
+
 .hero .image img {
     display: block; /* Ensures the image behaves like a block element */
     margin: auto; /* Centers the image horizontally */
