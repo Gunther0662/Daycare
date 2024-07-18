@@ -5,16 +5,26 @@
     --grey:grey;
     --white: white;
 }
-body{
+html body{
     background: linear-gradient(0.25turn, var(--grey), var(--bg), var(--hover)); 
     color:var(--white);
     font-family: Shadows into light;
     font-size:  30px;
+    @media(max-width: 320px){
+       
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+        max-width:fit-content;
+       
+    }
 }
 .box {
     --bulma-box-background-color: var(--card);
 }
-
+.font{
+    font-size:15px;;
+}
 .card {
         
         --bulma-card-background-color:var(--card);
@@ -22,6 +32,7 @@ body{
 
 .card-content {
     color: white;
+    font-size:12px ;
 }
 .navbar-brand {
 
