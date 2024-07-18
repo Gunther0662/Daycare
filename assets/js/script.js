@@ -72,6 +72,7 @@ function changeImage() {
 // which creates a carousel effect by continuously updating the displayed image.
 setInterval(changeImage, 3000);
 
+//Logs form submit to local storage
 function onSubmit() {
     localStorage.setItem("name", document.getElementById("name").value);
     localStorage.setItem("email", document.getElementById("email").value);
