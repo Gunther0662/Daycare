@@ -3,9 +3,8 @@ const weatherBody = document.getElementById('weather-info');
 const directionsMap = document.getElementById('directions-map')
 
 function weatherApi() {
-    const requestUrl = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/retrievebulkdataset?&key=VPMU84SNM5D6G5XLFH3KYPUT3&taskId=82a56d62ad4f70cb80d9f307f0b74325&zip=false'
-
-    fetch(requestUrl)
+    const requestUrl = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Dallas%2CUSA?unitGroup=us&key=VPMU84SNM5D6G5XLFH3KYPUT3'
+        fetch(requestUrl)
         .then(function(response) {
             return response.json();
         })
