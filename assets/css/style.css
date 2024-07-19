@@ -121,6 +121,8 @@ input.input {
 .cardDiv {
     display: flex;
     justify-content: center;
+    
+    
 }
 @media screen and (min-width: 320px)and (max-width:768px) {
     body {
@@ -138,6 +140,16 @@ input.input {
     .navbar-brand {
         flex-direction: column;
     }
+    .cardDiv {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card{
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width:1000px){
     .cardDiv {
         flex-direction: column;
         justify-content: center;
