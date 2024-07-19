@@ -149,27 +149,6 @@ input.input {
     }
 }
 
-#map {
-    height: 600px;
-}
-
-#warning-text {
-    display: none;
-    font-size: 50%;
-}
-@media screen and (max-width:600px){
-    #map {
-        display: none;
-    }
-
-    #warning-text {
-        display: block;
-    }
-}
-
-.directions {
-    height: 225px;
-}
 @media screen and (min-width: 768px)and (max-width:1000px){
     .cardDiv {
         flex-direction: column;
@@ -180,3 +159,29 @@ input.input {
     }
 }
 
+
+#map {
+    height: 600px;
+}
+
+
+#warning-text {
+    display: none;
+    font-size: 50%;
+}
+
+@media screen and (max-width:600px){
+    #map {
+        display: none;
+    }
+
+
+    #warning-text {
+        display: block;
+    }
+}
+
+
+.directions {
+    height: 225px;
+}

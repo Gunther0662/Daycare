@@ -1,9 +1,7 @@
 
 const weatherBody = document.getElementById('weather-info');
 const directionsMap = document.getElementById('directions-map')
-const mapEl = document.getElementById('map');
 
-// uses the weather api to provide various information about the weather.
 function weatherApi() {
     const requestUrl = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Dallas%2CUSA?unitGroup=us&key=VPMU84SNM5D6G5XLFH3KYPUT3'
         fetch(requestUrl)
@@ -34,7 +32,6 @@ function weatherApi() {
 
 weatherApi();
 
-
 function mapApi() {
     L.mapquest.key = 'gcaTh8IG8qArs8DxIIB6bognAJFNRbUJ';
     let map = L.mapquest.map('map', {
@@ -42,6 +39,7 @@ function mapApi() {
         layers: L.mapquest.tileLayer('map'),
         zoom: 12,
     });
+
 
     let directionsControl = L.mapquest.directionsControl({
         className: 'directions',
@@ -123,15 +121,19 @@ function mapApi() {
           interactive: true,
         }
       });
-      
+     
     directionsControl.addTo(map);
     map.addControl(L.mapquest.control());
 
+
     mapEl.append(map);
+
 
 }
 
+
 mapApi();
+
 
 // Selects the <img> element inside the .hero .image section and assigns it to the heroImage variable.
 const heroImage = document.querySelector('.hero .image img');
