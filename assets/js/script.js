@@ -1,10 +1,10 @@
 
 const weatherBody = document.getElementById('weather-info');
+const directionsMap = document.getElementById('directions-map')
 
 function weatherApi() {
-    const requestUrl = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/retrievebulkdataset?&key=VPMU84SNM5D6G5XLFH3KYPUT3&taskId=82a56d62ad4f70cb80d9f307f0b74325&zip=false'
-
-    fetch(requestUrl)
+    const requestUrl = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Dallas%2CUSA?unitGroup=us&key=VPMU84SNM5D6G5XLFH3KYPUT3'
+        fetch(requestUrl)
         .then(function(response) {
             return response.json();
         })
@@ -32,6 +32,12 @@ function weatherApi() {
 
 weatherApi();
 
+function mapImageApi() {
+    const imageUrl = 'https://www.mapquestapi.com/staticmap/v5/map?key=gcaTh8IG8qArs8DxIIB6bognAJFNRbUJ&center=32.909635630945935,-96.7452920605264&zoom=11&locations=32.909635630945935,-96.7452920605264&defaultMarker=marker-sm-22407F-3B5998&size=600,400@2x';
+    directionsMap.src = imageUrl;
+}
+
+mapImageApi();
 
 // Selects the <img> element inside the .hero .image section and assigns it to the heroImage variable.
 const heroImage = document.querySelector('.hero .image img');
@@ -65,3 +71,9 @@ function changeImage() {
 // which creates a carousel effect by continuously updating the displayed image.
 setInterval(changeImage, 3000);
 
+//Logs form submit to local storage
+function onSubmit() {
+    localStorage.setItem("name", document.getElementById("name").value);
+    localStorage.setItem("email", document.getElementById("email").value);
+    localStorage.setItem("message", document.getElementById("message").value);
+}
