@@ -13,9 +13,9 @@ As daycare managers, we intend to create an interactive web application to effec
     #credits
     #license
 
-## Installation
-    Not available 
+
 ## Usage
+![assets\image\Image of Sunshine Daycare.jpeg](<assets/image/Image of Sunshine Daycare.jpeg>)
 
 ## Credits
     Bilenie - CSS
