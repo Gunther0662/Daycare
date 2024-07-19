@@ -118,14 +118,6 @@ input.input {
     font-weight: 400;
     font-style: normal;
 }
-<<<<<<< HEAD
-@media screen and (min-width: 320px) and (max-width: 768px) {
-    .smaller {
-    justify-content: center;
-    }
-}
-    
-=======
 .cardDiv {
     display: flex;
     justify-content: center;
@@ -155,4 +147,3 @@ input.input {
     }
 }
 
->>>>>>> b53afb8e645b027ad306f63b524e626383f72552
