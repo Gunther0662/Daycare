@@ -1,6 +1,7 @@
 
 const weatherBody = document.getElementById('weather-info');
-const directionsMap = document.getElementById('directions-map')
+const directionsMap = document.getElementById('directions-map');
+const mapEl = document.getElementById('map');
 
 function weatherApi() {
     const requestUrl = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Dallas%2CUSA?unitGroup=us&key=VPMU84SNM5D6G5XLFH3KYPUT3'
@@ -127,8 +128,6 @@ function mapApi() {
 
 
     mapEl.append(map);
-
-
 }
 
 
