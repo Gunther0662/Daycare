@@ -7,13 +7,13 @@
 
 }
 
-html body {
+body {
     background: linear-gradient(0.25turn, var(--grey), var(--bg), var(--hover));
     color: var(--white);
     font-family: Shadows into light;
     font-size: 30px;
-    min-width: 100vw;
-
+   
+ 
 }
 
 .box {
