@@ -7,13 +7,13 @@
 
 }
 
-html body {
+body {
     background: linear-gradient(0.25turn, var(--grey), var(--bg), var(--hover));
     color: var(--white);
     font-family: Shadows into light;
     font-size: 30px;
-    min-width: 100vw;
-
+   
+ 
 }
 
 .box {
@@ -121,6 +121,8 @@ input.input {
 .cardDiv {
     display: flex;
     justify-content: center;
+    
+    
 }
 @media screen and (min-width: 320px)and (max-width:768px) {
     body {
@@ -147,3 +149,38 @@ input.input {
     }
 }
 
+@media screen and (min-width: 768px)and (max-width:1000px){
+    .cardDiv {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card{
+        max-width: 100%;
+    }
+}
+
+
+#map {
+    height: 600px;
+}
+
+#warning-text {
+    display: none;
+    font-size: 50%;
+}
+
+@media screen and (max-width:600px){
+    #map {
+        display: none;
+    }
+
+
+    #warning-text {
+        display: block;
+    }
+}
+
+
+.directions {
+    height: 225px;
+}

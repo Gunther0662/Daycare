@@ -41,5 +41,3 @@ As daycare managers, we intend to create an interactive web application to effec
     HTMLTemplate
     https://bulma.io/expo/
 
-
-    
