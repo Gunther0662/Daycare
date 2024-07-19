@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="style">
+    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
@@ -97,12 +98,12 @@
             <div class="tile is-ancestor">
                 <section id="directions">
                     <article class="tile is-child box">
-                        <figure class="image">
+                        <figure class="image" id="map">
                             <img id="directions-map" src="">
                         </figure>
                         <p class="title has-text-warning">Directions</p>
-                        <p class="subtitle-address">9131 Forest Ln, Dallas, Tx, 75243</p>
-                        <a class="button">Buy Tickets</a>
+                        <p class="subtitle-address">Address: 9131 Forest Ln, Dallas, Tx, 75243</p>
+                        <p class="subtitle-address" id="warning-text">Map only works on tablets or larger size screens</p>
                     </article>
                 </section>
                 <div class="tile is-parent">
@@ -310,7 +311,7 @@
     
 </footer>
 <script src="../js/bulma.js"></script>
-
+<script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
 <script src="./assets/js/script.js"></script>
 </body>
 
