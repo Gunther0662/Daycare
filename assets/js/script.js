@@ -1,9 +1,7 @@
 
 const weatherBody = document.getElementById('weather-info');
 const directionsMap = document.getElementById('directions-map')
-const mapEl = document.getElementById('map');
 
-// uses the weather api to provide various information about the weather.
 function weatherApi() {
     const requestUrl = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Dallas%2CUSA?unitGroup=us&key=VPMU84SNM5D6G5XLFH3KYPUT3'
         fetch(requestUrl)
@@ -34,104 +32,12 @@ function weatherApi() {
 
 weatherApi();
 
-
-function mapApi() {
-    L.mapquest.key = 'gcaTh8IG8qArs8DxIIB6bognAJFNRbUJ';
-    let map = L.mapquest.map('map', {
-        center: [32.909635630945935,-96.7452920605264],
-        layers: L.mapquest.tileLayer('map'),
-        zoom: 12,
-    });
-
-    let directionsControl = L.mapquest.directionsControl({
-        className: 'directions',
-        directions: {
-          options: {
-            timeOverage: 25,
-            doReverseGeocode: false,
-          }
-        },
-        directionsLayer: {
-          startMarker: {
-            title: 'Drag to change location',
-            draggable: true,
-            icon: 'marker-start',
-            iconOptions: {
-              size: 'sm'
-            }
-          },
-          endMarker: {
-            draggable: true,
-            title: 'Drag to change location',
-            icon: 'marker-end',
-            iconOptions: {
-              size: 'sm'
-            }
-          },
-          viaMarker: {
-            title: 'Drag to change route'
-          },
-          routeRibbon: {
-            showTraffic: true
-          },
-          alternateRouteRibbon: {
-            showTraffic: true
-          },
-          paddingTopLeft: [450, 20],
-          paddingBottomRight: [180, 20],
-        },
-        startInput: {
-          compactResults: true,
-          disabled: false,
-          location: {},
-          placeholderText: 'Starting point or click on the map...',
-          geolocation: {
-            enabled: true
-          },
-          clearTitle: 'Remove starting point'
-        },
-        endInput: {
-          compactResults: true,
-          disabled: false,
-          location: {},
-          placeholderText: 'Destination',
-          geolocation: {
-            enabled: true
-          },
-          clearTitle: 'Remove this destination'
-        },
-        addDestinationButton: {
-          enabled: true,
-          maxLocations: 3,
-        },
-        routeTypeButtons: {
-          enabled: true,
-        },
-        reverseButton: {
-          enabled: true,
-        },
-        optionsButton: {
-          enabled: true,
-        },
-        routeSummary: {
-          enabled: true,
-          compactResults: false,
-        },
-        narrativeControl: {
-          enabled: true,
-          compactResults: false,
-          interactive: true,
-        }
-      });
-      
-    directionsControl.addTo(map);
-    map.addControl(L.mapquest.control());
-
-    mapEl.append(map);
-
+function mapImageApi() {
+    const imageUrl = 'https://www.mapquestapi.com/staticmap/v5/map?key=gcaTh8IG8qArs8DxIIB6bognAJFNRbUJ&center=32.909635630945935,-96.7452920605264&zoom=11&locations=32.909635630945935,-96.7452920605264&defaultMarker=marker-sm-22407F-3B5998&size=600,400@2x';
+    directionsMap.src = imageUrl;
 }
 
-mapApi();
+mapImageApi();
 
 // Selects the <img> element inside the .hero .image section and assigns it to the heroImage variable.
 const heroImage = document.querySelector('.hero .image img');
