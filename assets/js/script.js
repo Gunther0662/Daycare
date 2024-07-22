@@ -167,8 +167,25 @@ function changeImage() {
 setInterval(changeImage, 3000);
 
 //Logs form submit to local storage
-function onSubmit() {
-    localStorage.setItem("name", document.getElementById("name").value);
-    localStorage.setItem("email", document.getElementById("email").value);
-    localStorage.setItem("message", document.getElementById("message").value);
+
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const messageInput = document.getElementById("message");
+const display = document.getElementById('footer');
+
+function onSubmit(event) {
+  event.preventDefault(); // Prevent the default form submission behavior
+
+  localStorage.setItem("name", nameInput.value);
+  localStorage.setItem("email", emailInput.value);
+  localStorage.setItem("message", messageInput.value);
+
+  displayMessage(); // Call the displayMessage function after saving to localStorage
 }
+
+function displayMessage() {
+  display.textContent = "Thank you! We will get back to you within 12-24 hours.";
+}
+
+const form = document.getElementById("form");
+form.addEventListener('submit', onSubmit); // Listen for form submit event
