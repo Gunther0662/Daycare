@@ -180,7 +180,9 @@ input.input {
     }
 }
 
-
 .directions {
     height: 350px;
+}
+#footer {
+ text-align: center;
 }
