@@ -181,10 +181,17 @@ function onSubmit(event) {
   localStorage.setItem("message", messageInput.value);
 
   displayMessage(); // Call the displayMessage function after saving to localStorage
+  localStorage.clear(); // Clear localStorage after displaying the message
+
+  // Clear input fields
+  nameInput.value = "";
+  emailInput.value = "";
+  messageInput.value = "";
 }
 
 function displayMessage() {
-  display.textContent = "Thank you! We will get back to you within 12-24 hours.";
+  const name = localStorage.getItem("name");
+  display.textContent = `Thank you ${name}! We will get back to you within 12-24 hours.`;
 }
 
 const form = document.getElementById("form");
