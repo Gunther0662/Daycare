@@ -181,7 +181,7 @@ function onSubmit(event) {
   localStorage.setItem("message", messageInput.value);
 
   displayMessage(); // Call the displayMessage function after saving to localStorage
-  localStorage.clear(); // Clear localStorage after displaying the message
+  
 
   // Clear input fields
   nameInput.value = "";
